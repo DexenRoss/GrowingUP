@@ -1,0 +1,2 @@
+SELECT * FROM users WHERE surname IS NULL;
+SELECT * FROM users WHERE surname IS NOT NULL;

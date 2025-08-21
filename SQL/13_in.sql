@@ -1,0 +1,1 @@
+SELECT * FROM users WHERE name IN ('Emilio', 'dexen'); -- El in se usa para especificar datos
