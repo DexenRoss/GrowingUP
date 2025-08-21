@@ -1,0 +1,1 @@
+SELECT  AVG(age) FROM users; -- Cuenta la cantidad de datos que no son nulos del dato
