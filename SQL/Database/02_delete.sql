@@ -1,0 +1,1 @@
+DELETE FROM users WHERE user_id = 445; -- Importante especificar que vamos a borrar con un WHERE
