@@ -1,0 +1,3 @@
+CREATE TABLE goodbye(name VARCHAR(50) NOT NULL);
+
+DROP TABLE goodbye;
