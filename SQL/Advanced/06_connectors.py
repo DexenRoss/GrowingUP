@@ -11,6 +11,15 @@ def print_user(user):
         #"auth_plugin": "mysql_native_password"
     }
 
+    #config ={
+        #"host": "bfccmv8bccdlmuydtpp5-mysql.services.clever-cloud.com",
+        #"port": "3306",
+        #"database":"bfccmv8bccdlmuydtpp5",
+        #"user":"uchg4f4qylpvsv3y",
+        #"password":"XR3rSk9hAm33U6YA15N4",
+        #"auth_plugin": "mysql_native_password"
+    #}
+
     connection = mysql.connector.connect(**config)
     cursor = connection.cursor()
 
