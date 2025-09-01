@@ -1,68 +1,167 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* index.css o App.css */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.game-board {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 3px solid #667eea;
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.square:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+/* Colores para X y O */
+.square:not(:empty) {
+  color: white;
+}
+
+.square:contains('X') {
+  background: #ff6b6b;
+}
+
+.square:contains('O') {
+  background: #4ecdc4;
+}
+
+/* Para navegadores que no soportan :contains */
+.square[data-value="X"] {
+  background: #ff6b6b;
+  color: white;
+}
+
+.square[data-value="O"] {
+  background: #4ecdc4;
+  color: white;
+}
+
+.game-info {
+  width: 100%;
+}
+
+.game-info ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-info li {
+  margin-bottom: 10px;
+}
+
+.game-info button {
+  width: 100%;
+  padding: 12px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-info button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+.game-info button:active {
+  transform: translateY(0);
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .game {
+    padding: 20px;
+    margin: 10px;
   }
-  a:hover {
-    color: #747bff;
+  
+  .square {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
   }
-  button {
-    background-color: #f9f9f9;
+  
+  .status {
+    font-size: 1.2rem;
   }
+}
+
+/* Animación para el ganador */
+@keyframes winner-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.winner {
+  animation: winner-animation 0.6s ease infinite;
 }
