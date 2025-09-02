@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Contenedor principal */
+div {
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor de filtrado */
+.FilterableProductTable {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.FilterableProductTable:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Barra de búsqueda */
+form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"] {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+  background-color: #f9f9f9;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  background-color: white;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+/* Checkbox personalizado */
+label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.2s;
+}
+
+label:hover {
+  color: #4CAF50;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #4CAF50;
+  background-color: #4CAF50;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+th colSpan {
+  text-align: center;
+}
+
+/* Filas de categoría */
+tr:not(:first-child) {
+  border-top: 1px solid #eee;
+}
+
+.ProductCategoryRow th {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  font-size: 1.1em;
+  padding: 12px 15px;
+}
+
+/* Filas de productos */
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Efecto hover en filas */
+tbody tr {
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Productos agotados */
+span {
+  color: #F44336;
+  font-weight: 500;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .FilterableProductTable {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  form {
+    flex-direction: column;
+  }
+}
