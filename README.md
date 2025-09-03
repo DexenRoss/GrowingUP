@@ -1,7 +1,7 @@
-GrowingUp 🌱
+GrowingUp 🌱  
 Un repositorio que documenta mi viaje de aprendizaje en desarrollo full-stack. Aquí voy registrando mi progreso mientras exploro diversas tecnologías y construyo proyectos para consolidar mis conocimientos.
 
-🎯 Objetivo
+🎯 Objetivo  
 Este repositorio tiene como propósito:
 
 - Documentar mi proceso de aprendizaje
@@ -12,7 +12,7 @@ Este repositorio tiene como propósito:
 
 - Construir un portafolio de proyectos diversos
 
-🛠 Tecnologías en aprendizaje
+🛠 Tecnologías en aprendizaje  
 Actualmente estudiando:
 - SQL - Fundamentos y consultas avanzadas ✅
 
@@ -51,7 +51,7 @@ GrowingUp/
 └── (Próximamente más tecnologías...)
 ```
 
-🚀 Proyectos
+🚀 Proyectos  
 Completados:
 - [Proyecto con SQL]: Aprendi lo escencial de SQL para poder crear, modificar y montar una base de datos 100% funcional
 
@@ -60,13 +60,13 @@ Completados:
 En desarrollo:
 - [Proyecto con Next.js]: Se espera poder hacer uso fluido de este framework
 
-📈 Progreso:
+📈 Progreso  
 Sigo aprendiendo y añadiendo nuevos proyectos regularmente. Mi objetivo es dominar el stack completo de desarrollo y poder construir aplicaciones completas por mí mismo.
 
-🤝 Contribuciones
+🤝 Contribuciones  
 Aunque este es principalmente un repositorio personal de aprendizaje, siempre estoy abierto a sugerencias, consejos o recomendaciones sobre mejores prácticas. ¡Siéntete libre de abrir un issue si tienes algo que compartir!
 
-📝 Blog de aprendizaje
+📝 Blog de aprendizaje  
 En cada proyecto lo que busco es:
 
 - Entender lo que se busca hacer
@@ -77,7 +77,7 @@ En cada proyecto lo que busco es:
 
 - Recursos útiles y novedosos
 
-🔮 Visión futura
+🔮 Visión futura  
 Planeo expandir este repositorio con:
 
 - Aplicaciones full-stack completas
