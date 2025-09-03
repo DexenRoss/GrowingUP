@@ -27,7 +27,8 @@ Próximos objetivos:
 
 - Muchas tecnologías más por explorar...
 
-📁 Estructura del repositorio (Al momento)
+📁 Estructura del repositorio (Al momento):
+```
 GrowingUp/
 │
 ├── SQL/
@@ -48,17 +49,18 @@ GrowingUp/
 │   
 │
 └── (Próximamente más tecnologías...)
+```
 
 🚀 Proyectos
 Completados:
-[Proyecto con SQL]: Aprendi lo escencial de SQL para poder crear, modificar y montar una base de datos 100% funcional
+- [Proyecto con SQL]: Aprendi lo escencial de SQL para poder crear, modificar y montar una base de datos 100% funcional
 
-[Proyecto con React]: Aprendi la estructura de React, el uso de estados y hooks. (tome el tutorial oficial)
+- [Proyecto con React]: Aprendi la estructura de React, el uso de estados y hooks. (tome el tutorial oficial)
 
 En desarrollo:
-[Proyecto con Next.js]: Se espera poder hacer uso fluido de este framework
+- [Proyecto con Next.js]: Se espera poder hacer uso fluido de este framework
 
-📈 Progreso
+📈 Progreso:
 Sigo aprendiendo y añadiendo nuevos proyectos regularmente. Mi objetivo es dominar el stack completo de desarrollo y poder construir aplicaciones completas por mí mismo.
 
 🤝 Contribuciones
