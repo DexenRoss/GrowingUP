@@ -58,7 +58,7 @@ Completados:
 - [Proyecto con React]: Aprendi la estructura de React, el uso de estados y hooks. (tome el tutorial oficial)
 
 En desarrollo:
-- [Proyecto con Next.js]: Se espera poder hacer uso fluido de este framework
+- [Proyecto con Next.js]: Se espera poder hacer uso fluido de este framework (Se esta realizando en el repositorio de nextjs-deploy)
 
 📈 Progreso  
 Sigo aprendiendo y añadiendo nuevos proyectos regularmente. Mi objetivo es dominar el stack completo de desarrollo y poder construir aplicaciones completas por mí mismo.
